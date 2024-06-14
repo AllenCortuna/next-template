@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+body {
+  color: #27272a;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .custom-input {
+    @apply input input-sm text-xs text-zinc-700 input-bordered bg-zinc-50 focus:outline-primary focus:border-zinc-100;
+  }
+  .custom-textarea {
+    @apply textarea textarea-bordered w-auto resize-none text-xs bg-zinc-50 focus:outline-primary focus:border-primary focus:border-zinc-100;
+  }
+  .primary-text {
+    @apply text-xs text-zinc-500;
+  }
+  .highligth-text {
+    @apply text-xs text-zinc-600 font-semibold;
+  }
+}
