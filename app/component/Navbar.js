@@ -4,14 +4,14 @@ import React from "react";
 import dpwhLogo from '../../public/dpwhLogo.png'
 export const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 px-20 bg-zinc-200">
+    <div className="navbar bg-base-100 px-5 bg-zinc-200">
       <div className="flex-1">
         <Link href={"/"} className={`text-md font-[600] text-zinc-600 flex gap-5`}>
           <Image src={dpwhLogo} alt="DPWH Logo.png"  width={40} height={40}/>
-          <b className="text-orange-500 my-auto">PMIS ⚠ </b>
+          <b className="text-orange-500 my-auto"></b>
         </Link>
       </div>
-      <div className="flex-none">
+      {/* <div className="flex-none">
         <ul className="menu menu-horizontal px-1 text-xs">
           <li>
             <details>
@@ -27,7 +27,7 @@ export const Navbar = () => {
             </details>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };
